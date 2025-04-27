@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckgxw0mue0n2g"]
+
+[ext_resource type="Script" uid="uid://bwyymgyg40rod" path="res://godot/main_gd.gd" id="1_wrhe4"]
+[ext_resource type="PackedScene" uid="uid://cmiplbn17h0s8" path="res://godot/agents/agent_gd.tscn" id="2_pawuu"]
+
+[node name="MainGD" type="Node2D"]
+script = ExtResource("1_wrhe4")
+agent_scene = ExtResource("2_pawuu")
+agent_count = 180
+
+[node name="AgentContainer" type="Node2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="InfoLabel" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0

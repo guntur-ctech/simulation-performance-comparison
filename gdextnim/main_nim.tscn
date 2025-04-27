@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://nhtui2fs61ph"]
+
+[ext_resource type="PackedScene" uid="uid://bq4j8j5toljdd" path="res://gdextnim/agents/agent_nim.tscn" id="1_uebg8"]
+
+[node name="MainNim" type="MainNim"]
+agent_scene = ExtResource("1_uebg8")
+agent_count = 180
+
+[node name="AgentContainer" type="Node2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="InfoLabel" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0

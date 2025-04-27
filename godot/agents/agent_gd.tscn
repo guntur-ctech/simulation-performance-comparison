@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmiplbn17h0s8"]
+
+[ext_resource type="Script" uid="uid://cuuwrortn4lcb" path="res://godot/agents/agent_gd.gd" id="1_kmu64"]
+
+[node name="AgentGD" type="Node2D"]
+script = ExtResource("1_kmu64")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(1, 0)
+scale = Vector2(0.174429, 0.174429)
+color = Color(1, 1, 0, 1)
+offset = Vector2(114, -74)
+polygon = PackedVector2Array(-142, 38, -142, 111, -52, 74)
+uv = PackedVector2Array(-142, 28, -142, 118, -25, 76)
