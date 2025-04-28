@@ -6,6 +6,9 @@ import gdext/buildconf
 import std/strutils
 
 --path: src
+--define: release
+--define: danger
+--opt: speed
 
 let setting = BuildSettings(
   name: capitalizeAscii "simperfcomp"

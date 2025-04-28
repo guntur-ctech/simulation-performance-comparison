@@ -4,7 +4,7 @@
 
 [node name="MainNim" type="MainNim"]
 agent_scene = ExtResource("1_uebg8")
-agent_count = 180
+agent_count = 625
 
 [node name="AgentContainer" type="Node2D" parent="."]
 

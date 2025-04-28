@@ -7,7 +7,9 @@ type AgentNim* {.gdsync.} = ptr object of Node2D
   damping: float32 = 0.1 # Slows down agents over time if no force applied
   screen_size*: Vector2
 
-method physics_process(self: AgentNim; delta: float64) {.gdsync.} = 
+# method physics_process(self: AgentNim; delta: float64) {.gdsync.} = 
+# Calling physics_process manually
+proc physics_process*(self: AgentNim; delta: float64) = 
   # Apply damping
   self.velocity = self.velocity * (1.0 - self.damping * float32 delta)
   
