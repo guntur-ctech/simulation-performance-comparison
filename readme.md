@@ -49,3 +49,11 @@ In my Linux machine (*I'm using AMD Ryzen 7 2700X Eight-Core Processor*):
 So there is a slight advantage to Nim over GDScript on 180 agents, but adding 10 more agents the performance are similar.
 
 There might be some optimizations that can be done on both ends and the results may vary.
+
+#### Update 2025/04/28:
+Thanks to [panno8M](https://github.com/panno8M), there are massive updates on optimization, with these 3 changes:
+1. Update compile options for speed
+2. Replaced Dictionary with Sequence
+3. Calling physics_process of AgentNim from MainNim
+
+The Nim version are able to run even to 600 agents with no significant FPS drop (average 50 FPS). While running 650 agents caused the FPS to drop to 11 (although still running well in my opinion)
